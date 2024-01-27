@@ -27,6 +27,8 @@ h1 {
     flex-direction: row;
     margin-bottom: 20px;
     border-radius: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .nav1 {
