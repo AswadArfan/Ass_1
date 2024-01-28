@@ -13,11 +13,11 @@
     </header>
         <div class ="menu">
             <nav class="navbar">
-                <a class="nav1" target="_blank" href="index.html">Home</a>
-                <a class="nav1" target="_blank" href="javascript.html">JScript</a>
-                <a class="nav1" target="" href="#">Json</a>
-                <a class="nav1" target="" href="#">Ajax</a>
-                <a class="nav1" target="" href="#">Angular</a>
+                <a class="nav1" target=""  href="index.html">Home</a>
+                <a class="nav1" target="" href="javascript.html">JScript</a>
+                <a class="nav1" target="_blank" href="#">Json</a>
+                <a class="nav1" target="_blank" href="#">Ajax</a>
+                <a class="nav1" target="_blank" href="#">Angular</a>
             </nav>
         </div>
         <h1>JavaScript</h1>
@@ -25,7 +25,7 @@
     <div class="box1 sidelinks">
         <h2 id="sidebar1">Quick Links</h2>
             <a id="sidebar" href="#introduction">Introduction</a>
-            <a id="sidebar" href="#comaprison">Comparison</a>
+            <a id="sidebar" href="#comparison">Comparison</a>
             <a id="sidebar" href="#data">Variables & Data Types</a>
             <a id="sidebar" href="#array">Arrays</a>
             <a id="sidebar" href="#object">Objects</a>
@@ -289,16 +289,17 @@
                         "\nAge: " + person.age);
                     }
                     
+                    <button onclick="displayProperties()">Click to Display Properties</button>
+
                 // Function to call the greet method of the person object
                     function callGreet() 
                     {
                         person.greet();
                     }
+
+                    <button onclick="callGreet()">Click to Call Greet Method</button>
             </code>
         </pre>
-        <button onclick="displayProperties()">Click to Display Properties</button>
-        <p></p>
-        <button onclick="callGreet()">Click to Call Greet Method</button>
         <script>
              // Create an object representing a person
              var person = {
@@ -347,6 +348,8 @@
                      
                     &lt;button onclick="greet('Harshdeep')&gt;Click to Call Greet Function&lt;/button&gt;
 
+                    <button onclick="greet('Harshdeep')">Click to Call Greet Function</button>
+
                 2.function processNumbers(number1, number2) 
                     {
                     alert('Number 1:', number1, 'Number 2:', number2);
@@ -354,13 +357,9 @@
 
                     &lt;button onclick="processNumbers(1, 5)"&gt;Click to Call Process Numbers Function&lt;/button&gt;
 
+                    <button onclick="processNumbers(1, 5)">Click to Call Process Numbers Function</button>
             </code>
         </pre>
-        <!-- Add buttons to trigger the functions -->
-        <button onclick="greet('Harshdeep')">Click to Call Greet Function</button>
-        <p></p>
-        <button onclick="processNumbers(1, 5)">Click to Call Process Numbers Function</button>
-
         <script>
             // Define functions
             function greet(name) 
@@ -434,11 +433,9 @@
 
                 &lt;/script&gt;
                 <h3>Check the Functionality:</h3>
-                <h2 id="myParagraph">Initial content of the DOM</h2 >
-
                 <!-- Button to trigger the updateContentAndStyle function -->
                 <button onclick="updateContentAndStyle()">Click to Update Content and Style</button>
-
+                <h2 id="myParagraph">Initial content of the DOM</h2 >
                 <script>
                     // Function to update content and style
                     function updateContentAndStyle() 
